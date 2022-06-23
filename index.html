@@ -34,7 +34,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-    <button type="button"   onclick="alert('Hello world!')"    >Click Me!</button>
+    <button type="button"   onclick="    window.dataLayer = window.dataLayer || []; 
+window.dataLayer.push({ 
+ 'event': 'buttonClick', 
+ 'click': [{
+        'id': '123',
+        'name': 'Button1',
+        'brand': 'mouse',
+        'quantity': 1
+      }]
+});  "    >Click Me!</button>
 
 <div class="index-div" >
        <nav>
